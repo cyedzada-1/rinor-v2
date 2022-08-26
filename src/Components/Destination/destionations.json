@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "place": "Skardu  ",
+    "desc": " Heaven on Earth "
+  },
+  {
+    "id": 2,
+    "place": " Ghanche ",
+    "desc": " Capital Of Tourism  "
+  },
+  {
+    "id": 3,
+    "place": "Shigar  ",
+    "desc": " Gateway To Shigar "
+  },
+  {
+    "id": 4,
+    "place": " Kharmang ",
+    "desc": " one of the five main valleys situated in Gilgit–Baltistan, Pakistan. "
+  },
+
+  {
+    "id": 5,
+    "place": " Astore ",
+    "desc": "  If you love nature, you will find beauty anywhere."
+  },
+  {
+    "id": 6,
+    "place": " Hunza ",
+    "desc": "a beautiful mountainous valley located in the Gilgit- Baltistan region of Pakistan  "
+  },
+  {
+    "id": 7,
+    "place": "Nagar  ",
+    "desc": " Nagar (Nagar) is a former princely state and one of the ten districts of Gilgit-Baltistan, Pakistan. "
+  },
+  {
+    "id": 8,
+    "place": " Gilgit ",
+    "desc": "The city is located in a broad valley near the confluence of the Gilgit River and Hunza River,  "
+  },
+  {
+    "id": 9,
+    "place": "Diamer  ",
+    "desc": "You can reach it through the Karakoram Highway."
+  }
+]

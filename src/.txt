@@ -1,0 +1,234 @@
+ 
+ import { Routes, Route } from "react-router-dom";
+ 
+import About from "./Container/About/About";
+import Destinations from "./Container/Destinations/Destinations";
+import Home from "./Container/Home/Home";
+import Tours from "./Container/Tours/Tours";
+import UserBlock from "./Container/UserBlock/UserBlock";
+import Contact from "./Components/Contact/Contact.jsx";
+import ErrorPage from "./Components/ErrorPage/ErrorPage.jsx";
+
+
+
+  <Routes>
+        <Route path="/" element={<Home />}>
+          <Route index element={<Home />} />
+          <Route path="tours" element={<Tours />} />
+          <Route path="destination" element={<Destinations />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="user-block" element={<UserBlock />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Route>
+      </Routes>
+
+
+      <TourType />
+      <TourList />
+      <Destination />
+      <AboutUs />
+      <Contact />
+      <Newsletter />
+      <Gallery />
+      <SearchBar />
+      <ErrorPage />
+
+
+
+                <div className="breadcrumbs">
+                    <div className="wrap">
+                        <div className="wrap_float">
+                            <a href="/">Home</a>
+                            <span className="separator">/</span>
+                            <a href="/">About Us</a>
+                        </div>
+                    </div>
+                </div>
+
+
+<Link  to="/nft">NFT Martketplace</Link>
+
+
+ <>
+            <div className="breadcrumbs"> </div>
+            <section class="page-not-found">
+                <img src="/img/error.png" alt="" />
+                <p>
+                    Sorry can't find the page you are looking for!
+                </p>
+                <button class="btn-home">Back To Home</button>
+            </section>
+        </>
+
+
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "settings": {
+    " react": {
+      "version": "18.2.0"
+    }
+  },
+  "overrides": [],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-no-undef": "off",
+    "react/jsx-uses-vars": "off",
+    " no-unused-vars": "off",
+    "react/jsx-uses-react": "off"
+  }
+}
+
+
+
+
+   <a href="tour-page-right-sidebar.html" className="item">
+                                            <div className="item_left">
+                                                <div className="image" style={{ backgroundImage: "url(img/demo-bg.jpg)" }}>
+                                                    <div className="shadow js-shadow"></div>
+                                                </div>
+
+                                            </div>
+                                            <div className="item_right">
+                                                <p className="country">United States of America</p>
+                                                <div className="rating-stars">
+                                                    <div className="star filled"></div>
+                                                    <div className="star filled"></div>
+                                                    <div className="star filled"></div>
+                                                    <div className="star"></div>
+                                                    <div className="star"></div>
+                                                </div>
+                                                <h3 className="item_title">
+                                                    Antelope canyon in Arizona USA exclusive tour
+                                                </h3>
+                                                <p className="item_text">
+                                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                                                </p>
+                                                <div className="info">
+                                                    <div className="days">5 days <span className="sale">Sale 23%</span></div>
+                                                    <div className="cost">from $356</div>
+                                                </div>
+                                                <div className="add_bookmark fav-button">
+                                                    <i className="is-added bouncy"></i>
+                                                    <i className="not-added bouncy"></i>
+                                                    <span className="fav-overlay"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="tour-page-right-sidebar.html" className="item">
+                                            <div className="item_left">
+                                                <div className="image" style={{ backgroundImage: "url(img/demo-bg.jpg)" }}>
+                                                    <div className="shadow js-shadow"></div>
+                                                </div>
+
+                                            </div>
+                                            <div className="item_right">
+                                                <p className="country">The biggest part of the world</p>
+                                                <div className="rating-stars">
+                                                    <div className="star filled"></div>
+                                                    <div className="star filled"></div>
+                                                    <div className="star filled"></div>
+                                                    <div className="star"></div>
+                                                    <div className="star"></div>
+                                                </div>
+                                                <h3 className="item_title">
+                                                    Asia
+                                                </h3>
+                                                <p className="item_text">
+                                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                                </p>
+                                                <div className="info">
+                                                    <div className="days">5 days <span className="sale">Sale 23%</span></div>
+                                                    <div className="cost">from $356</div>
+                                                </div>
+                                                <div className="add_bookmark fav-button">
+                                                    <i className="is-added bouncy"></i>
+                                                    <i className="not-added bouncy"></i>
+                                                    <span className="fav-overlay"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="tour-page-right-sidebar.html" className="item">
+                                            <div className="item_left">
+                                                <div className="image" style={{ backgroundImage: "url(img/demo-bg.jpg)" }}>
+                                                    <div className="shadow js-shadow"></div>
+                                                </div>
+
+                                            </div>
+                                            <div className="item_right">
+                                                <p className="country">Iceland</p>
+                                                <div className="rating-stars">
+                                                    <div className="star filled"></div>
+                                                    <div className="star filled"></div>
+                                                    <div className="star filled"></div>
+                                                    <div className="star"></div>
+                                                    <div className="star"></div>
+                                                </div>
+                                                <h3 className="item_title">
+                                                    Reykjavik
+                                                </h3>
+                                                <p className="item_text">
+                                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                                </p>
+                                                <div className="info">
+                                                    <div className="days">5 days |</div>
+                                                    <div className="cost">from $356</div>
+                                                </div>
+                                                <div className="add_bookmark fav-button">
+                                                    <i className="is-added bouncy"></i>
+                                                    <i className="not-added bouncy"></i>
+                                                    <span className="fav-overlay"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="tour-page-right-sidebar.html" className="item">
+                                            <div className="item_left">
+                                                <div className="image" style={{ backgroundImage: "url(img/demo-bg.jpg)" }}>
+                                                    <div className="shadow js-shadow"></div>
+                                                </div>
+
+                                            </div>
+                                            <div className="item_right">
+                                                <p className="country">Iceland</p>
+                                                <div className="rating-stars">
+                                                    <div className="star filled"></div>
+                                                    <div className="star filled"></div>
+                                                    <div className="star filled"></div>
+                                                    <div className="star"></div>
+                                                    <div className="star"></div>
+                                                </div>
+                                                <h3 className="item_title">
+                                                    Pink flamingos island
+                                                </h3>
+                                                <p className="item_text">
+                                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                                </p>
+                                                <div className="info">
+                                                    <div className="days">5 days |</div>
+                                                    <div className="cost">from $356</div>
+                                                </div>
+                                                <div className="add_bookmark fav-button">
+                                                    <i className="is-added bouncy"></i>
+                                                    <i className="not-added bouncy"></i>
+                                                    <span className="fav-overlay"></span>
+                                                </div>
+                                            </div>
+                                        </a>

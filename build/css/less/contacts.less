@@ -1,0 +1,220 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Page styles
+2. Media queries
+-------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------
+1. Page styles
+-----------------------------------------------------------------------------------*/
+
+.contacts-page {
+    //padding-bottom: 40px;
+    
+    .page_body {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: 46px;
+    }
+    
+    .contacts-left {
+        background: #F7F7F7;
+        border-radius: 12px;
+        min-height: 455px;
+        width: 42%;
+        padding: 48px;
+        
+        .tel {
+            width: 50%;
+            
+            a {
+                font-size: 26px;
+                font-weight: 600;
+                color: #222;
+                line-height: 36px;
+            }
+        }
+        
+        p:not([class]) {
+            color: rgba(34, 34, 34, .37);
+            font-size: 18px;
+        }
+        
+        .email {
+            width: 50%;
+            
+            a {
+                font-size: 22px;
+                color: #FF3B00;
+                line-height: 36px;
+            }
+        }
+        
+        .address {
+            font-size: 18px;
+            color: #222;
+            position: relative;
+            padding-left: 25px;
+            margin-top: 36px;
+            
+            &:before {
+                width: 16px;
+                height: 22px;
+                background: url(../img/geo-red.svg) center center no-repeat;
+                background-size: contain;
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 5px;
+            }
+        }
+        
+        .social-links {
+            margin-top: 34px;
+        }
+        
+        .btn {
+            height: 48px;
+            background: #D03000;
+            border-radius: 8px;
+            font-size: 21px;
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
+            display: block;
+            float: left;
+            line-height: 48px;
+            width: auto;
+            margin-top: 70px;
+        }
+    }
+    
+    .contacts-right {
+        background: #eee;
+        min-height: 455px;
+        border-radius: 12px;
+        width: 56%;
+        overflow: hidden;
+        position: relative;
+        margin-left: 2%;
+        
+        .map {
+            border-radius: 12px;
+            
+            iframe {
+                border-radius: 12px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+        }
+    }
+}
+
+
+/*----------------------------------------------------------------------------------
+2. Media queries
+-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1520px) {
+    .contacts-page .contacts-left .tel a {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .contacts-page .contacts-left .tel {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .contacts-page .contacts-left .email {
+        width: 100%;
+    }
+    
+    .contacts-page .contacts-left .address {
+        margin-top: 25px;
+    }
+    
+    .contacts-page .contacts-left .btn {
+        margin-top: 45px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contacts-page .contacts-left {
+        width: 100%;
+        min-height: inherit;
+    }
+    
+    .contacts-page .contacts-right {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .contacts-page .contacts-left .tel {
+        width: 50%;
+    }
+    
+    .contacts-page .contacts-left .email {
+        width: 50%;
+    }
+    
+    .contacts-page .page_body {
+        display: block;
+    }
+    
+    .contacts-page .contacts-right {
+        min-height: inherit;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .contacts-page .contacts-left {
+        padding: 26px;
+    }
+    
+    .contacts-page .contacts-left .email {
+        clear: both;
+        width: 100%;
+    }
+    
+    .contacts-page .contacts-left .tel {
+        width: 100%;
+    }
+    
+    .contacts-page .contacts-right {
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contacts-page .contacts-left {
+        padding: 26px 20px;
+    }
+    
+    .contacts-page .contacts-left .address {
+        font-size: 16px;
+    }
+    
+//    .social-links .link {
+//        margin-right: 0;
+//    }
+    
+    .contacts-page .contacts-left .social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

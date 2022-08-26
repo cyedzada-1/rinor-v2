@@ -1,0 +1,396 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Page styles
+1.1. Left Sifebar
+1.2. Search Results
+
+2. Media queries
+-------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------
+1. Page styles
+-----------------------------------------------------------------------------------*/
+
+.blog-list-page {
+    .page_head {
+        position: relative;
+        padding-right: 680px;
+        margin-bottom: 42px;
+        
+        .select_wrap {
+            width: 310px;
+            height: 58px;
+            background: #F7F7F7;
+            position: relative;
+            border-radius: 7px;
+            overflow: hidden;
+            margin-right: 25px;
+            
+            &:before {
+                width: 9px;
+                height: 9px;
+                background: #D03000;
+                position: absolute;
+                content: '';
+                top: 50%;
+                margin-top: -4px;
+                right: 24px;
+                border-radius: 50%;
+            }
+            
+            select {
+                width: 100%;
+                height: 100%;
+                border: 0;
+                background: none;
+                font-size: 21px;
+                color: rgba(145, 145, 147, .47);
+                padding: 0 50px 0 28px;
+                font-weight: 400;
+                position: relative;
+                z-index: 1;
+
+                &.selected {
+                    color: #222;
+                }
+
+                &:focus {
+                    outline: 0;
+                }
+            }
+        }
+        
+        .filters {
+            width: auto;
+            float: right;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    
+    .page_body {
+        
+        .pagination {
+            text-align: left;
+        }
+        
+        .blog-list {
+            .blog_item {
+                margin-bottom: 4%;
+                
+                &:last-child {
+                    display: block;
+                }
+            }
+        }
+        
+        .right_content {
+            float: right;
+            
+            .category_block {
+                background: #F7F7F7;
+                padding: 40px 30px;
+                border-radius: 7px;
+                
+                ul {
+                    li {
+                        margin-bottom: 15px;
+                        
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        
+                        a {
+                            width: 100%;
+                            display: block;
+                            float: left;
+                            font-size: 18px;
+                            color: #222;
+                            position: relative;
+                            
+                            .count {
+                                position: absolute;
+                                right: 0;
+                                color: #919193;
+                                top: 0;
+                            }
+                            
+                            &.active {
+                                color: #FF3B00;
+                                
+                                .count {
+                                    color: #003BFF;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .gallery_block {
+                background: #222;
+                border-radius: 7px;
+                padding: 40px 30px;
+                
+                .block_title {
+                    color: #fff;
+                }
+                
+                .images {
+                    .img {
+                        width: 114px;
+                        height: 110px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+                        display: block;
+                        float: left;
+                        
+                        &:nth-child(even) {
+                            margin-right: 0;
+                        }
+                        
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: block;
+                        }
+                    }
+                }
+                
+                .link {
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+            
+            .archive_block {
+                background: #0030D0;
+                padding: 40px 30px;
+                border-radius: 7px;
+                
+                .block_title {
+                    color: #fff;
+                }
+                
+                ul {
+                    li {
+                        margin-bottom: 15px;
+                        
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        
+                        a {
+                            width: 100%;
+                            display: block;
+                            float: left;
+                            font-size: 18px;
+                            color: #fff;
+                            position: relative;
+                            
+                            .count {
+                                position: absolute;
+                                right: 0;
+                                color: #fff;
+                                top: 0;
+                            }
+                            
+//                            &.active {
+//                                color: #FF3B00;
+//                                
+//                                .count {
+//                                    color: #003BFF;
+//                                }
+//                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .search_wrap {
+        width: 310px;
+        padding-right: 52px;
+        position: relative;
+        background: #F7F7F7;
+            border-radius: 7px;
+        
+        &.mobile_search {
+            display: none;
+        }
+
+        .submit {
+            height: 58px;
+            position: absolute;
+            top: 0;
+            width: 40px;
+            right: 10px;
+            background: none;
+
+            &:before {
+                width: 22px;
+                height: 22px;
+                background: url(../img/search-black.svg) center center no-repeat;
+                background-size: contain;
+                position: absolute;
+                content: '';
+                top: 50%;
+                margin-top: -11px;
+                right: 50%;
+                margin-right: -11px;
+            }
+        }
+
+        .input {
+            width: 100%;
+            display: block;
+            float: left;
+            height: 58px;
+            background: none;
+            border: 0;
+            padding-left: 28px;
+            font-weight: 400;
+            font-size: 21px;
+
+            &::-webkit-input-placeholder {color: rgba(145, 145, 147, .47);}
+            &::-moz-placeholder          {color: rgba(145, 145, 147, .47);}
+            &:-moz-placeholder           {color: rgba(145, 145, 147, .47);}
+            &:-ms-input-placeholder      {color: rgba(145, 145, 147, .47);}
+        }
+    }
+    
+    &.right-sidebar,
+    &.left-sidebar {
+        .blog_item {
+            width: 48%;
+            margin-right: 4%;
+            
+            &:nth-child(even) {
+                margin-right: 0;
+            }
+        }
+    }
+    
+    // 1.1. Left Sifebar
+    &.left-sidebar {
+        .left_content {
+            float: right;
+        }
+        
+        .page_body .right_content {
+            float: left;
+        }
+    }
+    
+    // 1.2. Left Sifebar
+    &.search-results {
+        .pagination {
+            text-align: center;
+        }
+    }
+}
+
+
+/*----------------------------------------------------------------------------------
+2. Media queries
+-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+    .blog-list-page .page_head {
+        padding-right: 0;
+    }
+    
+    .blog-list-page .page_head .filters {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        float: left;
+        margin-top: 22px;
+    }
+    
+    .blog-list-page .page_body .blog-list .blog_item {
+        margin-bottom: 4%;
+        
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+        
+        &:nth-child(odd) {
+            clear: both;
+        }
+    }
+    
+    .blog-list-page .page_body .blog-list .blog_item {
+        width: 100%;
+        margin-bottom: 50px;
+        margin-right: 0;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .blog-list-page .page_body .right_content .gallery_block .images .img {
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 4%;
+        height: 28vw;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .blog-list-page .page_head .select_wrap {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .blog-list-page .search_wrap {
+        width: 100%;
+        margin-top: 16px;
+    }
+    
+    .blog-list-page .page_head .filters {
+        width: 100%;
+    }
+    
+    .blog-list-page .page_body .right_content .gallery_block .images .img {
+        height: 37vw;
+    }
+    
+    .blog-list-page .search_wrap.mobile_search {
+        display: block;
+    }
+    
+    .blog-list-page .page_body .right_content .search_wrap {
+        display: none;
+    }
+    
+    .blog-list-page .page_body .pagination {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    .blog-list-page .page_head .select_wrap select {
+        font-size: 18px;
+        padding-left: 18px;
+    }
+    
+    .blog-list-page .search_wrap .input {
+        font-size: 18px;
+        padding-left: 18px;
+    }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "city": "Khaplu",
+    "title": "Trip to Khaplu",
+    "days": 3,
+    "price": "10K",
+    "rating": "52",
+    "description": "Lorem ipsum dolor sit amet, consectetur a",
+    "itinerary": {
+      "day1": "Lorem ipsum dolor sit amet consectetur a",
+      "day2": " Lorem ipsum dolor sit amet consectetur a",
+      "day3": "Lorem ipsum dolor sit amet consectetur a"
+    }
+  },
+  {
+    "city": "Shigar",
+    "title": "Trip to Shigar",
+    "days": 3,
+    "price": "100K",
+    "rating": "5",
+    "description": "Lorem ipsum dolor sit amet, consectetur a",
+    "itinerary": {
+      "day1": " Lorem ipsum dolor sit amet, consectetur a",
+
+      "day2": " Lorem ipsum dolor sit amet, consectetur a",
+
+      "day3": " Lorem ipsum dolor sit amet, consectetur a"
+    }
+  }
+]
